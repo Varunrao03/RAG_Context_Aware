@@ -10,23 +10,11 @@ live in production.
 
 1. RAW Vector Search
    
-   Query text
-    │
-    ▼ EmbeddingService.embed_one()          [TextEmbeddingModel — mocked]
-    │
-    ▼ VectorStore.search()                  [NumPy dot product, in-memory]
-    │
-    ▼ List[SearchResult]
+   Query text --->  EmbeddingService.embed_one()          [TextEmbeddingModel — mocked]  -->  VectorStore.search()                  [NumPy dot product, in-memory]  -->  List[SearchResult]
 
 2. Vertex AI Vector Search
 
-   Query text
-    │
-    ▼ EmbeddingService.embed_one()          [Real TextEmbeddingModel on GCP]
-    │
-    ▼ VertexVectorStore.search()            [Vertex AI Vector Search index]
-    │
-    ▼ List[SearchResult]
+   Query text  -->   EmbeddingService.embed_one()         [Real TextEmbeddingModel on GCP]  -->   VertexVectorStore.search()            [Vertex AI Vector Search index]  -->  List[SearchResult]
 
 
 # Result
