@@ -1,0 +1,177 @@
+[
+  {
+    "query_id": "Q1",
+    "query": "How does the system handle peak load",
+    "description": "Infrastructure / scalability — vague phrasing, no technical keywords",
+    "expanded_query": "How does the system handle peak load handling peak load traffic spikes autoscaling load balancing horizontal scaling throughput latency capacity planning rate limiting queue architecture high concurrency",
+    "strategy_A_raw_vector_search": [
+      {
+        "rank": 1,
+        "score": 0.7396,
+        "source": "peak_load_management",
+        "text": "Peak load management involves strategies to handle sudden spikes in traffic or demand. Autoscaling automatically provisions additional compute resources when demand rises and releases them when demand falls. Rate limiting, caching, and queue-based architectures are common techniques to maintain syst"
+      },
+      {
+        "rank": 2,
+        "score": 0.4739,
+        "source": "scalability_overview",
+        "text": "ute incoming traffic across multiple servers to prevent any single server from becoming a bottleneck during peak load periods."
+      },
+      {
+        "rank": 3,
+        "score": 0.4631,
+        "source": "scalability_overview",
+        "text": "System scalability refers to the ability of a system to handle increasing amounts of work by adding resources. Horizontal scaling adds more machines to a pool, while vertical scaling increases the capacity of existing machines. Load balancers distribute incoming traffic across multiple servers to pr"
+      }
+    ],
+    "strategy_B_query_expansion": [
+      {
+        "rank": 1,
+        "score": 0.7626,
+        "source": "peak_load_management",
+        "text": "Peak load management involves strategies to handle sudden spikes in traffic or demand. Autoscaling automatically provisions additional compute resources when demand rises and releases them when demand falls. Rate limiting, caching, and queue-based architectures are common techniques to maintain syst"
+      },
+      {
+        "rank": 2,
+        "score": 0.5899,
+        "source": "scalability_overview",
+        "text": "System scalability refers to the ability of a system to handle increasing amounts of work by adding resources. Horizontal scaling adds more machines to a pool, while vertical scaling increases the capacity of existing machines. Load balancers distribute incoming traffic across multiple servers to pr"
+      },
+      {
+        "rank": 3,
+        "score": 0.5013,
+        "source": "scalability_overview",
+        "text": "ute incoming traffic across multiple servers to prevent any single server from becoming a bottleneck during peak load periods."
+      }
+    ],
+    "analysis": {
+      "top1_source_changed": false,
+      "score_delta_rank1": 0.0229,
+      "unique_sources_A": [
+        "peak_load_management",
+        "scalability_overview"
+      ],
+      "unique_sources_B": [
+        "peak_load_management",
+        "scalability_overview"
+      ]
+    }
+  },
+  {
+    "query_id": "Q2",
+    "query": "What techniques reduce errors in AI-generated answers",
+    "description": "RAG / hallucination — indirect phrasing, no 'RAG' or 'retrieval' keyword",
+    "expanded_query": "What techniques reduce errors in AI-generated answers reducing hallucinations in large language model outputs retrieval augmented generation RAG grounding factual accuracy knowledge base anchoring faithfulness citation verification reducing hallucinations in large language model outputs retrieval augmented generation RAG grounding factual accuracy knowledge base anchoring faithfulness citation verification",
+    "strategy_A_raw_vector_search": [
+      {
+        "rank": 1,
+        "score": 0.4291,
+        "source": "rag_overview",
+        "text": "Retrieval-Augmented Generation (RAG) is an AI framework that combines the strengths of retrieval-based and generative models. It retrieves relevant documents from a knowledge base and uses them as context for a language model to generate accurate, grounded responses. RAG reduces hallucinations and k"
+      },
+      {
+        "rank": 2,
+        "score": 0.2623,
+        "source": "machine_learning_overview",
+        "text": "Machine learning is a subset of artificial intelligence that enables systems to learn and improve from experience without being explicitly programmed. It focuses on developing computer programs that can access data and use it to learn for themselves. The process begins with observations or data, suc"
+      },
+      {
+        "rank": 3,
+        "score": 0.2292,
+        "source": "rag_overview",
+        "text": "ounded responses. RAG reduces hallucinations and keeps responses factual by anchoring generation in retrieved evidence."
+      }
+    ],
+    "strategy_B_query_expansion": [
+      {
+        "rank": 1,
+        "score": 0.6845,
+        "source": "rag_overview",
+        "text": "Retrieval-Augmented Generation (RAG) is an AI framework that combines the strengths of retrieval-based and generative models. It retrieves relevant documents from a knowledge base and uses them as context for a language model to generate accurate, grounded responses. RAG reduces hallucinations and k"
+      },
+      {
+        "rank": 2,
+        "score": 0.5173,
+        "source": "rag_overview",
+        "text": "ounded responses. RAG reduces hallucinations and keeps responses factual by anchoring generation in retrieved evidence."
+      },
+      {
+        "rank": 3,
+        "score": 0.3321,
+        "source": "vector_databases",
+        "text": "nlike traditional databases, they retrieve results based on semantic closeness rather than exact keyword matches."
+      }
+    ],
+    "analysis": {
+      "top1_source_changed": false,
+      "score_delta_rank1": 0.2555,
+      "unique_sources_A": [
+        "machine_learning_overview",
+        "rag_overview"
+      ],
+      "unique_sources_B": [
+        "vector_databases",
+        "rag_overview"
+      ]
+    }
+  },
+  {
+    "query_id": "Q3",
+    "query": "How do modern language models process sequential text efficiently",
+    "description": "Transformers / NLP — multi-concept, could match several documents",
+    "expanded_query": "How do modern language models process sequential text efficiently large language model transformer architecture self-attention BERT GPT T5 sequential text processing parallel computation NLP natural language understanding generation transformer self-attention mechanism parallel sequence processing BERT GPT positional encoding encoder decoder NLP language model",
+    "strategy_A_raw_vector_search": [
+      {
+        "rank": 1,
+        "score": 0.4708,
+        "source": "transformers_overview",
+        "text": "Transformers are a type of neural network architecture introduced in the paper 'Attention Is All You Need' (2017). They rely on self-attention mechanisms to process sequential data in parallel, making them highly efficient for NLP tasks. Models like BERT, GPT, and T5 are all based on the transformer"
+      },
+      {
+        "rank": 2,
+        "score": 0.4108,
+        "source": "nlp_overview",
+        "text": "Natural language processing (NLP) is a subfield of linguistics, computer science, and artificial intelligence concerned with the interactions between computers and human language, in particular how to program computers to process and analyze large amounts of natural language data. The goal is a comp"
+      },
+      {
+        "rank": 3,
+        "score": 0.4102,
+        "source": "rag_overview",
+        "text": "Retrieval-Augmented Generation (RAG) is an AI framework that combines the strengths of retrieval-based and generative models. It retrieves relevant documents from a knowledge base and uses them as context for a language model to generate accurate, grounded responses. RAG reduces hallucinations and k"
+      }
+    ],
+    "strategy_B_query_expansion": [
+      {
+        "rank": 1,
+        "score": 0.7458,
+        "source": "transformers_overview",
+        "text": "Transformers are a type of neural network architecture introduced in the paper 'Attention Is All You Need' (2017). They rely on self-attention mechanisms to process sequential data in parallel, making them highly efficient for NLP tasks. Models like BERT, GPT, and T5 are all based on the transformer"
+      },
+      {
+        "rank": 2,
+        "score": 0.5473,
+        "source": "transformers_overview",
+        "text": "BERT, GPT, and T5 are all based on the transformer architecture and have achieved state-of-the-art results across a wide range of benchmarks."
+      },
+      {
+        "rank": 3,
+        "score": 0.493,
+        "source": "nlp_overview",
+        "text": "Natural language processing (NLP) is a subfield of linguistics, computer science, and artificial intelligence concerned with the interactions between computers and human language, in particular how to program computers to process and analyze large amounts of natural language data. The goal is a comp"
+      }
+    ],
+    "analysis": {
+      "top1_source_changed": false,
+      "score_delta_rank1": 0.275,
+      "unique_sources_A": [
+        "transformers_overview",
+        "nlp_overview",
+        "rag_overview"
+      ],
+      "unique_sources_B": [
+        "transformers_overview",
+        "nlp_overview"
+      ]
+    }
+  }
+]
